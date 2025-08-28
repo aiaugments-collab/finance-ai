@@ -7,8 +7,8 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Welth",
-  description: "One stop Finance Platform",
+  title: "FinAI",
+  description: "AI-Powered Finance Platform",
 };
 
 export default function RootLayout({ children }) {
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <head>
-          <link rel="icon" href="/logo-sm.png" sizes="any" />
+          {/* <link rel="icon" href="/finai-logo.png" sizes="any" /> */}
         </head>
         <body className={`${inter.className}`}>
           <Header />

@@ -118,7 +118,7 @@ const FinanceAILanding = () => {
 
             {/* Main Headline */}
             <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent leading-tight mb-6">
-              Finance AI
+              FinAI
               <br />
               <span className="text-5xl md:text-6xl">Smart Money Management</span>
             </h1>
@@ -147,7 +147,7 @@ const FinanceAILanding = () => {
                     <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                       <TrendingUp className="w-12 h-12 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2">Finance AI Dashboard</h3>
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2">FinAI Dashboard</h3>
                     <p className="text-gray-600">Your financial data, beautifully visualized</p>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ const FinanceAILanding = () => {
               AI-Powered Features
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent mb-6">
-              Why Choose Finance AI?
+              Why Choose FinAI?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Experience the future of personal finance with our cutting-edge AI technology
@@ -212,7 +212,7 @@ const FinanceAILanding = () => {
               The Results Speak For Themselves
             </h2>
             <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-              Join thousands of users who have transformed their financial lives with Finance AI
+              Join thousands of users who have transformed their financial lives with FinAI
             </p>
           </div>
 
@@ -371,7 +371,7 @@ const FinanceAILanding = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-4">
-                Finance AI
+                FinAI
               </h3>
               <p className="text-gray-400 max-w-md leading-relaxed">
                 Empowering individuals and businesses with AI-driven financial insights for a smarter, more secure financial future.
@@ -400,7 +400,7 @@ const FinanceAILanding = () => {
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Finance AI. All rights reserved.</p>
+            <p>&copy; 2025 FinAI. All rights reserved.</p>
           </div>
         </div>
       </footer>

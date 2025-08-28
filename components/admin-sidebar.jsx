@@ -69,7 +69,7 @@ const AdminSidebar = () => {
             <h2 className="text-lg font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
               Admin Panel
             </h2>
-            <p className="text-xs text-gray-500">Finance AI</p>
+            <p className="text-xs text-gray-500">FinAI</p>
           </div>
         </div>
       </div>

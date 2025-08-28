@@ -107,7 +107,7 @@ const AdminDashboard = () => {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold text-gray-900">Dashboard Overview</h1>
-          <p className="text-gray-600 mt-1">Welcome back! Here&apos;s what&apos;s happening with Finance AI today.</p>
+          <p className="text-gray-600 mt-1">Welcome back! Here&apos;s what&apos;s happening with FinAI today.</p>
         </div>
         <div className="flex items-center space-x-3">
           <div className="flex items-center space-x-2 text-sm text-gray-600">

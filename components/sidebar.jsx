@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import { Button } from "./ui/button";
 import { SignOutButton } from "@clerk/nextjs";
-import Image from "next/image";
+
 
 const sidebarItems = [
   {
@@ -89,14 +89,8 @@ const Sidebar = () => {
       {/* Header */}
       <div className="p-4 border-b border-gray-200 flex items-center justify-between">
         {!isCollapsed && (
-          <Link href="/dashboard">
-            <Image
-              src="/logo.png"
-              alt="Welth Logo"
-              width={120}
-              height={40}
-              className="h-8 w-auto object-contain"
-            />
+          <Link href="/dashboard" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+            FinAI
           </Link>
         )}
         <Button

@@ -4,8 +4,8 @@ import { SignedIn, UserButton, currentUser } from "@clerk/nextjs";
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
-  title: "Admin Dashboard - Finance AI",
-  description: "Administrative dashboard for Finance AI platform",
+  title: "Admin Dashboard - FinAI",
+  description: "Administrative dashboard for FinAI platform",
 };
 
 const AdminLayout = async ({ children }) => {
@@ -22,7 +22,7 @@ const AdminLayout = async ({ children }) => {
               <div className="flex items-center justify-between">
                 <div>
                   <h1 className="text-2xl font-bold text-gray-900">Admin Dashboard</h1>
-                  <p className="text-sm text-gray-600">Monitor and manage your Finance AI platform</p>
+                  <p className="text-sm text-gray-600">Monitor and manage your FinAI platform</p>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="flex items-center space-x-2">
