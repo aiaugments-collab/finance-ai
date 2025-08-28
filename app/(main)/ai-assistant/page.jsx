@@ -21,8 +21,7 @@ import {
   Send
 } from "lucide-react";
 import Link from "next/link";
-import { getUserTransactions } from "@/actions/transaction";
-import { getUserAccounts } from "@/actions/dashboard";
+
 
 const AIAssistantPage = () => {
   const [messages, setMessages] = useState([

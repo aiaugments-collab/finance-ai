@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { 
   PlusCircle, 
   TrendingUp, 
-  TrendingDown, 
+ 
   AlertTriangle,
   CheckCircle,
   PieChart,

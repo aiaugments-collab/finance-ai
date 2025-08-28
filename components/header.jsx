@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 import Link from "next/link";
 import { SignedOut, SignInButton } from "@clerk/nextjs";
-import Image from "next/image";
+
 
 const Header = () => {
   return (

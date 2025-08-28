@@ -3,10 +3,8 @@ import {
   Bot,
   Camera,
   Brain,
-  Zap,
   TrendingUp,
   TrendingDown,
-  Clock,
   CheckCircle,
   XCircle,
   AlertTriangle,
@@ -14,7 +12,6 @@ import {
   Activity,
   Target,
   Sparkles,
-  FileText,
   MessageSquare,
   BarChart3,
 } from "lucide-react";

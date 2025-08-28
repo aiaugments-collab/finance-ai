@@ -3,13 +3,10 @@
 import React, { useState } from "react";
 import {
   Settings,
-  User,
-  Lock,
   Bell,
   Globe,
   Database,
   Key,
-  Mail,
   Shield,
   Zap,
   Server,
@@ -27,7 +24,7 @@ import {
 
 const AdminSettings = () => {
   const [activeTab, setActiveTab] = useState("general");
-  const [showApiKey, setShowApiKey] = useState(false);
+
   const [showSecrets, setShowSecrets] = useState({});
 
   const toggleSecret = (key) => {

@@ -4,11 +4,8 @@ import {
   Server,
   Database,
   Zap,
-  Wifi,
   HardDrive,
   Cpu,
-  Memory,
-  Clock,
   CheckCircle,
   AlertTriangle,
   XCircle,
@@ -264,7 +261,7 @@ const SystemHealth = () => {
                   <div>
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center space-x-2">
-                        <Memory className="w-4 h-4 text-gray-500" />
+                        <Cpu className="w-4 h-4 text-gray-500" />
                         <span className="text-sm text-gray-600">Memory</span>
                       </div>
                       <span className="text-sm font-medium text-gray-900">{server.memory}%</span>
