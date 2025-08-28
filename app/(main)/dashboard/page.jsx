@@ -1,4 +1,6 @@
 
+export const dynamic = 'force-dynamic';
+
 import { getUserAccounts } from "@/actions/dashboard";
 import { getDashboardData } from "@/actions/dashboard";
 import { getCurrentBudget } from "@/actions/budget";
