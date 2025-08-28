@@ -11,6 +11,7 @@ import {
   Filter,
   Download,
   TrendingUp,
+  TrendingDown,
   Calendar,
   ArrowUpRight,
   ArrowDownLeft
