@@ -118,7 +118,7 @@ const FinanceAILanding = () => {
 
             {/* Main Headline */}
             <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent leading-tight mb-6">
-              FinAI
+              Finance AI
               <br />
               <span className="text-5xl md:text-6xl">Smart Money Management</span>
             </h1>

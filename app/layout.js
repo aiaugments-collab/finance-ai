@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
 
@@ -19,7 +18,6 @@ export default function RootLayout({ children }) {
           {/* <link rel="icon" href="/finai-logo.png" sizes="any" /> */}
         </head>
         <body className={`${inter.className}`}>
-          <Header />
           <main className="min-h-screen">{children}</main>
           <Toaster richColors />
         </body>
