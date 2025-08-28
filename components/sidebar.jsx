@@ -1,0 +1,159 @@
+"use client";
+
+import React, { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { 
+  LayoutDashboard, 
+  CreditCard, 
+  Building2, 
+  PieChart, 
+  TrendingUp, 
+  Crown, 
+  Settings, 
+  ChevronLeft,
+  ChevronRight,
+  LogOut,
+  Brain,
+  Scan,
+  Sparkles
+} from "lucide-react";
+import { Button } from "./ui/button";
+import { SignOutButton } from "@clerk/nextjs";
+import Image from "next/image";
+
+const sidebarItems = [
+  {
+    title: "Dashboard",
+    href: "/dashboard",
+    icon: LayoutDashboard
+  },
+  {
+    title: "Transactions",
+    href: "/transaction",
+    icon: CreditCard
+  },
+  {
+    title: "Accounts",
+    href: "/account",
+    icon: Building2
+  },
+  {
+    title: "Budget",
+    href: "/budget",
+    icon: PieChart
+  },
+  {
+    title: "Analytics",
+    href: "/analytics",
+    icon: TrendingUp
+  },
+  {
+    title: "AI Assistant",
+    href: "/ai-assistant", 
+    icon: Brain,
+    badge: "AI"
+  },
+  {
+    title: "Receipt Scanner",
+    href: "/receipt-scanner",
+    icon: Scan,
+    badge: "AI"
+  },
+  {
+    title: "AI Insights",
+    href: "/ai-insights",
+    icon: Sparkles,
+    badge: "AI"
+  },
+  {
+    title: "Subscription",
+    href: "/subscription",
+    icon: Crown
+  },
+  {
+    title: "Settings",
+    href: "/settings",
+    icon: Settings
+  }
+];
+
+const Sidebar = () => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+  const pathname = usePathname();
+
+  return (
+    <div className={`bg-white border-r border-gray-200 transition-all duration-300 ${
+      isCollapsed ? "w-16" : "w-64"
+    } flex flex-col h-screen sticky top-0`}>
+      {/* Header */}
+      <div className="p-4 border-b border-gray-200 flex items-center justify-between">
+        {!isCollapsed && (
+          <Link href="/dashboard">
+            <Image
+              src="/logo.png"
+              alt="Welth Logo"
+              width={120}
+              height={40}
+              className="h-8 w-auto object-contain"
+            />
+          </Link>
+        )}
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={() => setIsCollapsed(!isCollapsed)}
+          className="p-1.5 h-8 w-8"
+        >
+          {isCollapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
+        </Button>
+      </div>
+
+      {/* Navigation */}
+      <nav className="flex-1 p-4 space-y-2">
+        {sidebarItems.map((item) => {
+          const Icon = item.icon;
+          const isActive = pathname === item.href || 
+            (item.href !== "/dashboard" && pathname.startsWith(item.href));
+
+          return (
+            <Link key={item.href} href={item.href}>
+              <div className={`flex items-center justify-between px-3 py-2.5 rounded-lg transition-colors ${
+                isActive 
+                  ? "bg-blue-50 text-blue-600 border border-blue-200" 
+                  : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+              }`}>
+                <div className="flex items-center space-x-3">
+                  <Icon size={20} className="flex-shrink-0" />
+                  {!isCollapsed && (
+                    <span className="font-medium text-sm">{item.title}</span>
+                  )}
+                </div>
+                {!isCollapsed && item.badge && (
+                  <span className="px-2 py-1 text-xs font-medium bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full">
+                    {item.badge}
+                  </span>
+                )}
+              </div>
+            </Link>
+          );
+        })}
+      </nav>
+
+      {/* User Section */}
+      <div className="p-4 border-t border-gray-200">
+        <SignOutButton>
+          <Button
+            variant="ghost"
+            className={`w-full ${isCollapsed ? "px-2" : "justify-start"}`}
+          >
+            <LogOut size={20} />
+            {!isCollapsed && <span className="ml-3">Sign Out</span>}
+          </Button>
+        </SignOutButton>
+      </div>
+    </div>
+  );
+};
+
+export default Sidebar;
