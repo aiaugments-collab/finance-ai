@@ -68,8 +68,8 @@ const AccountPage = async () => {
       {/* Header */}
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900">Accounts</h1>
-          <p className="text-gray-600 mt-2">Manage your bank accounts and view balances</p>
+          <h1 className="text-3xl font-bold text-gray-900">Portfolio Management</h1>
+          <p className="text-gray-600 mt-2">Comprehensive financial portfolio oversight and strategic allocation</p>
         </div>
         <div className="flex items-center space-x-2">
           <CreateAccountDrawer>
@@ -81,7 +81,7 @@ const AccountPage = async () => {
           <Link href="/account/create">
             <Button className="flex items-center space-x-2">
               <Plus size={16} />
-              <span>Add Account</span>
+              <span>Create Portfolio</span>
             </Button>
           </Link>
         </div>
@@ -93,7 +93,7 @@ const AccountPage = async () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div className="space-y-2">
-                <p className="text-sm font-medium text-gray-600">Total Balance</p>
+                <p className="text-sm font-medium text-gray-600">Total Assets</p>
                 <p className="text-2xl font-bold text-gray-900">
                   ${accountStats.totalBalance.toLocaleString(undefined, { minimumFractionDigits: 2 })}
                 </p>
@@ -109,7 +109,7 @@ const AccountPage = async () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div className="space-y-2">
-                <p className="text-sm font-medium text-gray-600">Total Accounts</p>
+                <p className="text-sm font-medium text-gray-600">Active Portfolios</p>
                 <p className="text-2xl font-bold text-gray-900">{accountStats.totalAccounts}</p>
               </div>
               <div className="p-3 bg-blue-50 rounded-full">
@@ -123,7 +123,7 @@ const AccountPage = async () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div className="space-y-2">
-                <p className="text-sm font-medium text-gray-600">Checking Accounts</p>
+                <p className="text-sm font-medium text-gray-600">Operational Accounts</p>
                 <p className="text-2xl font-bold text-gray-900">{accountStats.currentAccounts}</p>
               </div>
               <div className="p-3 bg-purple-50 rounded-full">
@@ -137,7 +137,7 @@ const AccountPage = async () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div className="space-y-2">
-                <p className="text-sm font-medium text-gray-600">Savings Accounts</p>
+                <p className="text-sm font-medium text-gray-600">Investment Accounts</p>
                 <p className="text-2xl font-bold text-gray-900">{accountStats.savingsAccounts}</p>
               </div>
               <div className="p-3 bg-orange-50 rounded-full">
@@ -158,13 +158,13 @@ const AccountPage = async () => {
                   <CreditCard size={24} className="text-gray-400" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900">No accounts yet</h3>
-                  <p className="text-gray-600">Get started by adding your first bank account</p>
+                  <h3 className="text-lg font-medium text-gray-900">No portfolios configured</h3>
+                  <p className="text-gray-600">Initialize your financial portfolio management system</p>
                 </div>
                 <Link href="/account/create">
                   <Button>
                     <Plus size={16} className="mr-2" />
-                    Add Your First Account
+                    Initialize Portfolio
                   </Button>
                 </Link>
               </div>
@@ -195,7 +195,7 @@ const AccountPage = async () => {
                   <div>
                     <CardTitle className="text-lg">{account.name}</CardTitle>
                     <CardDescription>
-                      {account.type === "CURRENT" ? "Checking Account" : "Savings Account"}
+                      {account.type === "CURRENT" ? "Operational Portfolio" : "Investment Portfolio"}
                     </CardDescription>
                   </div>
                 </div>
@@ -206,7 +206,7 @@ const AccountPage = async () => {
               {/* Balance */}
               <div className="space-y-2">
                 <div className="flex justify-between items-end">
-                  <span className="text-sm text-gray-600">Current Balance</span>
+                  <span className="text-sm text-gray-600">Asset Valuation</span>
                   <div className="text-right">
                     <div className="text-2xl font-bold text-gray-900">
                       ${account.balance.toLocaleString(undefined, { minimumFractionDigits: 2 })}
@@ -231,7 +231,7 @@ const AccountPage = async () => {
               {/* Activity Summary */}
               <div className="flex justify-between items-center pt-4 border-t border-gray-100">
                 <div className="space-y-1">
-                  <p className="text-sm text-gray-600">Transactions this month</p>
+                  <p className="text-sm text-gray-600">Monthly Activity</p>
                   <p className="font-medium text-gray-900">{account.transactions}</p>
                 </div>
                 <div className="space-y-1 text-right">
@@ -247,7 +247,7 @@ const AccountPage = async () => {
                 <Link href={`/account/${account.id}`} className="flex-1">
                   <Button variant="outline" className="w-full flex items-center justify-center space-x-2">
                     <Eye size={16} />
-                    <span>View Details</span>
+                    <span>Portfolio Analysis</span>
                   </Button>
                 </Link>
                 <Button variant="outline" size="icon">
@@ -265,8 +265,8 @@ const AccountPage = async () => {
         <CardHeader>
           <div className="flex justify-between items-center">
             <div>
-              <CardTitle>Recent Activity</CardTitle>
-              <CardDescription>Latest transactions across all accounts</CardDescription>
+              <CardTitle>Portfolio Activity Intelligence</CardTitle>
+              <CardDescription>Real-time financial activity monitoring across all portfolios</CardDescription>
             </div>
             <Link href="/transaction">
               <Button variant="outline" size="sm" className="flex items-center space-x-2">

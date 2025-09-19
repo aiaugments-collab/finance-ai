@@ -52,28 +52,28 @@ const TransactionPage = async () => {
   const netAmount = totalIncome - totalExpenses;
   const transactionStats = [
     {
-      title: "Net Balance",
+      title: "Net Cash Flow",
       amount: `${netAmount >= 0 ? '+' : '-'}$${Math.abs(netAmount).toLocaleString(undefined, { minimumFractionDigits: 2 })}`,
       change: "+12.5%",
       type: netAmount >= 0 ? "positive" : "negative",
       icon: netAmount >= 0 ? TrendingUp : TrendingDown
     },
     {
-      title: "Total Income",
+      title: "Total Revenue",
       amount: `$${totalIncome.toLocaleString(undefined, { minimumFractionDigits: 2 })}`, 
       change: "+8.2%",
       type: "positive",
       icon: ArrowUpRight
     },
     {
-      title: "Total Expenses",
+      title: "Total Expenditure",
       amount: `$${totalExpenses.toLocaleString(undefined, { minimumFractionDigits: 2 })}`,
       change: "-3.1%",
       type: "positive",
       icon: ArrowDownLeft
     },
     {
-      title: "Pending",
+      title: "Pending Authorization",
       amount: `$${pendingAmount.toLocaleString(undefined, { minimumFractionDigits: 2 })}`,
       change: `${pendingTransactions.length} transaction${pendingTransactions.length !== 1 ? 's' : ''}`,
       type: "neutral",
@@ -89,13 +89,13 @@ const TransactionPage = async () => {
       {/* Header */}
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900">Transactions</h1>
-          <p className="text-gray-600 mt-2">View and manage all your financial transactions</p>
+          <h1 className="text-3xl font-bold text-gray-900">Transaction Intelligence</h1>
+          <p className="text-gray-600 mt-2">Advanced financial transaction monitoring and analysis</p>
         </div>
         <Link href="/transaction/create">
           <Button className="flex items-center space-x-2">
             <Plus size={16} />
-            <span>Add Transaction</span>
+            <span>Record Transaction</span>
           </Button>
         </Link>
       </div>
@@ -137,8 +137,8 @@ const TransactionPage = async () => {
         <CardHeader>
           <div className="flex justify-between items-center">
             <div>
-              <CardTitle>All Transactions</CardTitle>
-              <CardDescription>View and filter your transaction history</CardDescription>
+              <CardTitle>Financial Activity Log</CardTitle>
+              <CardDescription>Comprehensive transaction monitoring and intelligence</CardDescription>
             </div>
             <div className="flex items-center space-x-2">
               <Button variant="outline" size="sm">

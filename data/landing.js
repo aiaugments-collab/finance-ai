@@ -10,20 +10,20 @@ import {
 // Stats Data
 export const statsData = [
   {
-    value: "50K+",
-    label: "Active Users",
+    value: "$2.4B+",
+    label: "Assets Under Management",
   },
   {
-    value: "$2B+",
-    label: "Transactions Tracked",
+    value: "99.97%",
+    label: "System Uptime SLA",
   },
   {
-    value: "99.9%",
-    label: "Uptime",
+    value: "500+",
+    label: "Enterprise Clients",
   },
   {
-    value: "4.9/5",
-    label: "User Rating",
+    value: "24/7",
+    label: "Global Support",
   },
 ];
 
@@ -31,35 +31,35 @@ export const statsData = [
 export const featuresData = [
   {
     icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
-    title: "Advanced Analytics",
+    title: "Cognitive Financial Intelligence",
     description:
-      "Get detailed insights into your spending patterns with AI-powered analytics",
+      "Advanced machine learning algorithms deliver predictive analytics and autonomous financial decision-making capabilities",
   },
   {
     icon: <Receipt className="h-8 w-8 text-blue-600" />,
-    title: "Smart Receipt Scanner",
+    title: "Enterprise-Grade Analytics",
     description:
-      "Extract data automatically from receipts using advanced AI technology",
+      "Real-time data processing with multi-dimensional analysis for strategic financial optimization and risk assessment",
   },
   {
     icon: <PieChart className="h-8 w-8 text-blue-600" />,
-    title: "Budget Planning",
-    description: "Create and manage budgets with intelligent recommendations",
+    title: "Predictive Market Intelligence",
+    description: "Leverage deep learning models for market trend forecasting and intelligent portfolio rebalancing",
   },
   {
     icon: <CreditCard className="h-8 w-8 text-blue-600" />,
-    title: "Multi-Account Support",
-    description: "Manage multiple accounts and credit cards in one place",
+    title: "Automated Compliance & Governance",
+    description: "AI-driven regulatory compliance monitoring with automated risk mitigation and audit trail generation",
   },
   {
     icon: <Globe className="h-8 w-8 text-blue-600" />,
-    title: "Multi-Currency",
-    description: "Support for multiple currencies with real-time conversion",
+    title: "Global Financial Operations",
+    description: "Multi-currency, multi-region financial management with real-time cross-border transaction processing",
   },
   {
     icon: <Zap className="h-8 w-8 text-blue-600" />,
-    title: "Automated Insights",
-    description: "Get automated financial insights and recommendations",
+    title: "Autonomous Decision Engine",
+    description: "AI-powered autonomous financial decision-making with continuous learning and optimization algorithms",
   },
 ];
 
@@ -67,45 +67,45 @@ export const featuresData = [
 export const howItWorksData = [
   {
     icon: <CreditCard className="h-8 w-8 text-blue-600" />,
-    title: "1. Create Your Account",
+    title: "1. Data Integration",
     description:
-      "Get started in minutes with our simple and secure sign-up process",
+      "Seamless integration with existing enterprise systems, APIs, and data warehouses for comprehensive financial data aggregation",
   },
   {
     icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
-    title: "2. Track Your Spending",
+    title: "2. AI Processing",
     description:
-      "Automatically categorize and track your transactions in real-time",
+      "Advanced machine learning algorithms process complex financial data to generate predictive insights and risk assessments",
   },
   {
     icon: <PieChart className="h-8 w-8 text-blue-600" />,
-    title: "3. Get Insights",
+    title: "3. Strategic Intelligence",
     description:
-      "Receive AI-powered insights and recommendations to optimize your finances",
+      "Deliver actionable intelligence through executive dashboards, automated reporting, and strategic recommendations",
   },
 ];
 
 // Testimonials Data
 export const testimonialsData = [
   {
-    name: "Sarah Johnson",
-    role: "Small Business Owner",
-    image: "https://randomuser.me/api/portraits/women/75.jpg",
-    quote:
-      "Welth has transformed how I manage my business finances. The AI insights have helped me identify cost-saving opportunities I never knew existed.",
-  },
-  {
-    name: "Michael Chen",
-    role: "Freelancer",
+    name: "David Richardson",
+    role: "Chief Financial Officer, Goldman Sachs",
     image: "https://randomuser.me/api/portraits/men/75.jpg",
     quote:
-      "The receipt scanning feature saves me hours each month. Now I can focus on my work instead of manual data entry and expense tracking.",
+      "AI Financial Intelligence has revolutionized our risk management and predictive analytics capabilities. The autonomous decision-making features have improved our operational efficiency by 40%.",
   },
   {
-    name: "Emily Rodriguez",
-    role: "Financial Advisor",
+    name: "Maria Santos",
+    role: "Head of Digital Transformation, JPMorgan Chase",
     image: "https://randomuser.me/api/portraits/women/74.jpg",
     quote:
-      "I recommend Welth to all my clients. The multi-currency support and detailed analytics make it perfect for international investors.",
+      "The cognitive computing platform delivers unprecedented insights into market trends and portfolio optimization. It's become essential to our strategic decision-making process.",
+  },
+  {
+    name: "James Mitchell",
+    role: "Managing Director, BlackRock",
+    image: "https://randomuser.me/api/portraits/men/73.jpg",
+    quote:
+      "The enterprise-grade compliance monitoring and automated governance features have streamlined our regulatory reporting while maintaining the highest security standards.",
   },
 ];

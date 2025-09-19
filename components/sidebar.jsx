@@ -24,55 +24,55 @@ import { SignOutButton } from "@clerk/nextjs";
 
 const sidebarItems = [
   {
-    title: "Dashboard",
+    title: "Executive Dashboard",
     href: "/dashboard",
     icon: LayoutDashboard
   },
   {
-    title: "Transactions",
+    title: "Transaction Intelligence",
     href: "/transaction",
     icon: CreditCard
   },
   {
-    title: "Accounts",
+    title: "Portfolio Management",
     href: "/account",
     icon: Building2
   },
   {
-    title: "Budget",
+    title: "Strategic Planning",
     href: "/budget",
     icon: PieChart
   },
   {
-    title: "Analytics",
+    title: "Predictive Analytics",
     href: "/analytics",
     icon: TrendingUp
   },
   {
-    title: "AI Assistant",
+    title: "AI Financial Advisor",
     href: "/ai-assistant", 
     icon: Brain,
-    badge: "AI"
+    badge: "COGNITIVE"
   },
   {
-    title: "Receipt Scanner",
+    title: "Document Intelligence",
     href: "/receipt-scanner",
     icon: Scan,
-    badge: "AI"
+    badge: "ML"
   },
   {
-    title: "AI Insights",
+    title: "Market Intelligence",
     href: "/ai-insights",
     icon: Sparkles,
-    badge: "AI"
+    badge: "INSIGHTS"
   },
   {
-    title: "Subscription",
+    title: "Enterprise License",
     href: "/subscription",
     icon: Crown
   },
   {
-    title: "Settings",
+    title: "System Configuration",
     href: "/settings",
     icon: Settings
   }
@@ -89,8 +89,8 @@ const Sidebar = () => {
       {/* Header */}
       <div className="p-4 border-b border-gray-200 flex items-center justify-between">
         {!isCollapsed && (
-          <Link href="/dashboard" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-            FinAI
+          <Link href="/dashboard" className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            AI Financial Intelligence
           </Link>
         )}
         <Button
@@ -124,7 +124,7 @@ const Sidebar = () => {
                   )}
                 </div>
                 {!isCollapsed && item.badge && (
-                  <span className="px-2 py-1 text-xs font-medium bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full">
+                  <span className="px-2 py-1 text-xs font-medium bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full">
                     {item.badge}
                   </span>
                 )}

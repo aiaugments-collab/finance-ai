@@ -10,8 +10,8 @@ const Header = () => {
       <SignedOut>
         <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
           <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-              FinAI
+            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              AI Financial Intelligence
             </Link>
 
             {/* Navigation Links - Only show for signed out users */}
@@ -31,12 +31,12 @@ const Header = () => {
             <div className="flex items-center space-x-4">
               <SignInButton forceRedirectUrl="/dashboard">
                 <Button variant="outline" className="border-gray-300 hover:border-blue-400 hover:text-blue-600">
-                  Login
+                  Client Portal
                 </Button>
               </SignInButton>
               <SignInButton forceRedirectUrl="/dashboard">
-                <Button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white">
-                  Get Started
+                <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white">
+                  Request Demo
                 </Button>
               </SignInButton>
             </div>
@@ -48,8 +48,8 @@ const Header = () => {
       <SignedIn>
         <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
           <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-              FinAI
+            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              AI Financial Intelligence
             </Link>
 
             {/* Navigation Links for signed in users */}
@@ -71,8 +71,8 @@ const Header = () => {
             {/* User Actions for signed in users */}
             <div className="flex items-center space-x-4">
               <Link href="/dashboard">
-                <Button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white">
-                  Go to Dashboard
+                <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white">
+                  Executive Dashboard
                 </Button>
               </Link>
               <UserButton afterSignOutUrl="/" />

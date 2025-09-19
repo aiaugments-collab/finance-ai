@@ -68,7 +68,7 @@ export function BudgetProgress({ initialBudget, currentExpenses }) {
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <div className="flex-1">
           <CardTitle className="text-sm font-medium">
-            Monthly Budget (Default Account)
+            Strategic Budget Allocation (Primary Portfolio)
           </CardTitle>
           <div className="flex items-center gap-2 mt-1">
             {isEditing ? (
@@ -106,7 +106,7 @@ export function BudgetProgress({ initialBudget, currentExpenses }) {
                     ? `$${currentExpenses.toFixed(
                         2
                       )} of $${initialBudget.amount.toFixed(2)} spent`
-                    : "No budget set"}
+                    : "No allocation defined"}
                 </CardDescription>
                 <Button
                   variant="ghost"

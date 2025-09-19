@@ -82,7 +82,7 @@ export function DashboardOverview({ accounts, transactions }) {
       <Card>
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
           <CardTitle className="text-base font-normal">
-            Recent Transactions
+            Latest Financial Activities
           </CardTitle>
           <Select
             value={selectedAccountId}
@@ -104,7 +104,7 @@ export function DashboardOverview({ accounts, transactions }) {
           <div className="space-y-4">
             {recentTransactions.length === 0 ? (
               <p className="text-center text-muted-foreground py-4">
-                No recent transactions
+                No recent financial activities
               </p>
             ) : (
               recentTransactions.map((transaction) => (
@@ -148,13 +148,13 @@ export function DashboardOverview({ accounts, transactions }) {
       <Card>
         <CardHeader>
           <CardTitle className="text-base font-normal">
-            Monthly Expense Breakdown
+            Strategic Expenditure Analysis
           </CardTitle>
         </CardHeader>
         <CardContent className="p-0 pb-5">
           {pieChartData.length === 0 ? (
             <p className="text-center text-muted-foreground py-4">
-              No expenses this month
+              No expenditures recorded this period
             </p>
           ) : (
             <div className="h-[300px]">
